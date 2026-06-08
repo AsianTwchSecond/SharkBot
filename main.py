@@ -1,9 +1,8 @@
-import os
 import discord
 from discord.ext import commands
 from discord import app_commands
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = "MTUxMzUzMjI3ODc3NTYxMTQ3Mg.G9m-fa.iNGJfpenXbQF4r1Glrm7hztN6UeHKFRZfXpgvY"
 
 OWNER_ROLE_ID = 1513093428920061972
 
@@ -130,9 +129,7 @@ async def setrank(
 
     embed.set_image(url=skin_url)
 
-    embed.set_footer(
-        text="SharkSMP Rank System"
-    )
+    embed.set_footer(text="SharkSMP Rank System")
 
     await interaction.response.send_message(embed=embed)
 
